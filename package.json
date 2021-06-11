@@ -1,0 +1,14 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Nature tours project",
+  "main": "index.html",
+  "scripts": {
+    "core-css": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Manuel Figueira",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
