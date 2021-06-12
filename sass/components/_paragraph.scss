@@ -1,0 +1,6 @@
+.paragraph {
+  font-size: $font-size-text;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
