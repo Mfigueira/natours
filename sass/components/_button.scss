@@ -2,6 +2,8 @@
   font-size: $font-size-text;
   display: inline-block;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   transition: all 0.2s;
 
   &--primary {
@@ -22,6 +24,7 @@
 
   &--primary,
   &--secondary {
+    &,
     &:link,
     &:visited {
       text-transform: uppercase;
@@ -40,7 +43,8 @@
       }
     }
 
-    &:active {
+    &:active,
+    &:focus {
       transform: translateY(-0.1rem);
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     }
