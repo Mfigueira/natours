@@ -10,6 +10,41 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input class="navigation__checkbox" id="nav-toggle" type="checkbox" />
+      <label class="navigation__button" for="nav-toggle">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              <span>01</span> About Natours
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              <span>02</span> Your benefits
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              <span>03</span> Popular tours
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#"><span>04</span> Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#"><span>05</span> Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img class="header__logo" src="img/logo-white.png" alt="Logo" />
@@ -160,7 +195,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a class="btn btn--primary btn--animated" href="#">
+                  <a class="btn btn--primary btn--animated" href="#popup">
                     Book now!
                   </a>
                 </div>
@@ -192,7 +227,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a class="btn btn--primary btn--animated" href="#">
+                  <a class="btn btn--primary btn--animated" href="#popup">
                     Book now!
                   </a>
                 </div>
@@ -224,7 +259,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a class="btn btn--primary btn--animated" href="#">
+                  <a class="btn btn--primary btn--animated" href="#popup">
                     Book now!
                   </a>
                 </div>
@@ -409,11 +444,40 @@
         </div>
         <div class="col-1-of-2">
           <div class="footer__copyright">
-            Copyright &copy; Natours &mdash; 2021
+            <a href="#" class="footer__slide-link">
+              Copyright &copy; Natours &mdash; 2021
+            </a>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img class="popup__img" src="img/nat-8.jpg" alt="Tour photo" />
+          <img class="popup__img" src="img/nat-9.jpg" alt="Tour photo" />
+        </div>
+        <div class="popup__right">
+          <a class="popup__close" href="#section-tours">&times;</a>
+          <h2 class="heading heading--2 u-mb-small">Start booking now</h2>
+          <h3 class="heading heading--3 u-mb-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+            adipisci. Voluptatum quas corporis est hic veritatis dolorum autem
+            officiis totam facilis, in aut fuga quisquam, exercitationem
+            obcaecati eaque blanditiis eos? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Natus, adipisci. Voluptatum quas
+            corporis est hic veritatis dolorum autem officiis totam facilis, in
+            aut fuga quisquam, exercitationem obcaecati eaque blanditiis eos?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="btn btn--secondary btn--animated" href="#">Book now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Custom grid system example -->
     <!-- <section class="grid-test">

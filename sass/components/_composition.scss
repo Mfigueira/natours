@@ -10,6 +10,10 @@
     outline-offset: 2rem;
     transition: all 0.2s;
 
+    @include respond(phone) {
+      outline-offset: 1rem;
+    }
+
     &--p1 {
       left: 0;
       top: -2rem;
@@ -30,6 +34,10 @@
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
+
+      @include respond(phone) {
+        outline: 0.5rem solid $color-primary;
+      }
     }
   }
 
