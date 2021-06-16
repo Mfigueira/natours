@@ -6,6 +6,6 @@ This project is a landing page with a lot of modern CSS properties, responsive t
 
 I built it based on the Advanced CSS course by Jonas Schmedtmann.
 
-<!-- ## Link to website?
+## Where can I see it?
 
-Right [here](https://...)! -->
+Right [here](https://mfigueira.github.io/natours/)!
